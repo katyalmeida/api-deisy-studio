@@ -1,0 +1,35 @@
+{
+  "name": "back-end",
+  "version": "1.0.0",
+  "description": "Projeto Base",
+  "main": "src/server.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "nodemon"
+  },
+  "author": "Katy Almeida",
+  "license": "ISC",
+  "keywords": [],
+  "dependencies": {
+    "bcrypt": "^5.1.1",
+    "dotenv": "^16.4.5",
+    "express": "^4.19.2",
+    "jsonwebtoken": "^9.0.2",
+    "nodemon": "^3.1.4",
+    "package": "^1.0.1",
+    "pg": "^8.12.0",
+    "sequelize": "^6.37.3",
+    "sequelize-cli": "^6.6.2",
+    "uuid": "^10.0.0",
+    "yup": "^1.4.0"
+  },
+  "devDependencies": {
+    "@eslint/js": "^9.9.0",
+    "eslint": "^9.9.0",
+    "eslint-config-prettier": "^9.1.0",
+    "globals": "^15.9.0",
+    "prettier": "3.3.3",
+    "sucrase": "^3.35.0"
+  }
+}
