@@ -16,7 +16,6 @@ class SpecialtyController {
     }
 
     const { name, description } = request.body;
-    console.log(description);
     const { filename: path } = request.file;
 
     try {
