@@ -28,6 +28,13 @@ class Services extends Model {
       as: 'specialty',
     });
   }
+
+  static associate(models) {
+    this.hasMany(models.Options, {
+      foreignKey: 'serviceId',
+      as: 'options',
+    });
+  }
 }
 
 export default Services;
