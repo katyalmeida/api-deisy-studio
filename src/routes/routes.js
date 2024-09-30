@@ -4,6 +4,8 @@ import UserController from '../app/controllers/UserController.js';
 import LoginController from '../app/controllers/LoginController.js';
 import SpecialtyController from '../app/controllers/SpecialtyController.js';
 import ServicesController from '../app/controllers/ServicesController.js';
+import OptionsController from '../app/controllers/OptionsController.js';
+import ReservationController from '../app/controllers/ReservationController.js';
 import authMiddleware from '../app/middlewares/auth.js';
 import multer from 'multer';
 import multerConfig from '../config/multer.js';
@@ -25,5 +27,11 @@ routes.put('/specialty/:id', upload.single('file'), SpecialtyController.update);
 routes.get('/services', ServicesController.index);
 routes.post('/services', upload.single('file'), ServicesController.store);
 routes.put('/services/:id', upload.single('file'), ServicesController.update);
+
+routes.get('/options', OptionsController.index);
+routes.post('/options', OptionsController.createOption);
+// routes.put('/options/:id', OptionsController.update);
+
+routes.post('/reservation', ReservationController.createReservation);
 
 export default routes;
