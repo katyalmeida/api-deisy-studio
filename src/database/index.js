@@ -2,10 +2,13 @@ import { Sequelize } from 'sequelize';
 import configDataBase from '../config/database.cjs';
 import User from '../app/models/User.js';
 import Services from '../app/models/Services.js';
+import Reservation from '../app/models/Reservation.js';
 
 import Specialty from '../app/models/Specialty.js';
+import Options from '../app/models/Options.js';
+import ReservationController from '../app/models/Reservation.js';
 
-const models = [User, Specialty, Services];
+const models = [User, Specialty, Services, Options, Reservation];
 
 class Database {
   constructor() {
